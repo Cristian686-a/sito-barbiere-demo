@@ -1,0 +1,282 @@
+<!DOCTYPE html>
+<html lang="it">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Barbiere professionista: tagli di stile, barba perfetta e rasatura tradizionale in un ambiente premium."
+    />
+    <meta
+      name="keywords"
+      content="barbiere, taglio capelli, barba, rasatura tradizionale, prenotazione barbiere"
+    />
+    <meta name="author" content="Barber Studio" />
+    <title>Barber Studio | Tagli di stile, esperienza autentica</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <!-- Navbar sticky con link a sezioni interne -->
+    <header class="site-header" id="top">
+      <nav class="navbar container">
+        <a href="#top" class="logo" aria-label="Vai alla home">
+          BARBER<span>STUDIO</span>
+        </a>
+        <button class="menu-toggle" aria-label="Apri menu" aria-expanded="false">
+          <span></span><span></span><span></span>
+        </button>
+        <ul class="nav-links">
+          <li><a href="#chi-siamo">Chi siamo</a></li>
+          <li><a href="#servizi">Servizi</a></li>
+          <li><a href="#galleria">Galleria</a></li>
+          <li><a href="#prenotazione">Prenotazione</a></li>
+          <li><a href="#contatti">Contatti</a></li>
+        </ul>
+        <button class="theme-toggle" aria-label="Attiva o disattiva dark mode">
+          <span aria-hidden="true">◐</span>
+        </button>
+      </nav>
+    </header>
+
+    <main>
+      <!-- Hero section con visual impattante -->
+      <section class="hero section-animate">
+        <div class="hero-overlay"></div>
+        <div class="hero-content container">
+          <p class="hero-kicker">Barbiere professionista</p>
+          <h1>Tagli di stile, esperienza autentica</h1>
+          <p>
+            Tradizione e cura del dettaglio per un look impeccabile, ogni giorno.
+          </p>
+          <a class="btn btn-primary" href="#prenotazione">Prenota ora</a>
+        </div>
+      </section>
+
+      <!-- Sezione storia e valori -->
+      <section class="about container section-animate" id="chi-siamo">
+        <div class="section-heading">
+          <p class="kicker">Chi siamo</p>
+          <h2>Una storia di precisione e passione</h2>
+        </div>
+        <div class="about-grid">
+          <article>
+            <p>
+              Da oltre 15 anni, Barber Studio unisce tecniche tradizionali e stile
+              contemporaneo per offrire un servizio personalizzato e professionale.
+              Ogni taglio nasce dall'ascolto e dall'attenzione ai dettagli.
+            </p>
+          </article>
+          <ul class="values">
+            <li>
+              <h3>Precisione</h3>
+              <p>Linee pulite, finiture perfette e attenzione millimetrica.</p>
+            </li>
+            <li>
+              <h3>Stile</h3>
+              <p>Consulenza personalizzata per valorizzare il tuo look.</p>
+            </li>
+            <li>
+              <h3>Tradizione</h3>
+              <p>Rituali classici del barbering in chiave premium moderna.</p>
+            </li>
+          </ul>
+        </div>
+      </section>
+
+      <!-- Lista servizi con icone e prezzi -->
+      <section class="services section-animate" id="servizi">
+        <div class="container">
+          <div class="section-heading">
+            <p class="kicker">Servizi</p>
+            <h2>Trattamenti pensati per te</h2>
+          </div>
+          <div class="service-grid">
+            <article class="card">
+              <div class="icon" aria-hidden="true">✂</div>
+              <h3>Taglio capelli</h3>
+              <p>Taglio moderno o classico con styling finale.</p>
+              <strong>€25</strong>
+            </article>
+            <article class="card">
+              <div class="icon" aria-hidden="true">🧔</div>
+              <h3>Barba</h3>
+              <p>Regolazione, definizione contorni e trattamento nutriente.</p>
+              <strong>€18</strong>
+            </article>
+            <article class="card">
+              <div class="icon" aria-hidden="true">🪒</div>
+              <h3>Rasatura tradizionale</h3>
+              <p>Panno caldo, rasatura a lama e finish lenitivo.</p>
+              <strong>€22</strong>
+            </article>
+            <article class="card">
+              <div class="icon" aria-hidden="true">★</div>
+              <h3>Pacchetto completo</h3>
+              <p>Taglio + barba + trattamento viso in un'unica esperienza.</p>
+              <strong>€45</strong>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <!-- Galleria con effetto hover -->
+      <section class="gallery container section-animate" id="galleria">
+        <div class="section-heading">
+          <p class="kicker">Galleria</p>
+          <h2>I nostri lavori</h2>
+        </div>
+        <div class="gallery-grid">
+          <figure class="gallery-item">
+            <img
+              src="https://images.unsplash.com/photo-1517832606299-7ae9b720a186?auto=format&fit=crop&w=1200&q=80"
+              alt="Taglio sfumato moderno"
+              loading="lazy"
+            />
+          </figure>
+          <figure class="gallery-item">
+            <img
+              src="https://images.unsplash.com/photo-1622287162716-f311baa1a2b8?auto=format&fit=crop&w=1200&q=80"
+              alt="Definizione barba professionale"
+              loading="lazy"
+            />
+          </figure>
+          <figure class="gallery-item">
+            <img
+              src="https://images.unsplash.com/photo-1585747860715-2ba37e788b70?auto=format&fit=crop&w=1200&q=80"
+              alt="Rasatura tradizionale"
+              loading="lazy"
+            />
+          </figure>
+          <figure class="gallery-item">
+            <img
+              src="https://images.unsplash.com/photo-1589985270826-4b7bb135bc9d?auto=format&fit=crop&w=1200&q=80"
+              alt="Prima e dopo taglio"
+              loading="lazy"
+            />
+          </figure>
+          <figure class="gallery-item">
+            <img
+              src="https://images.unsplash.com/photo-1521498542256-5aeb47ba2b36?auto=format&fit=crop&w=1200&q=80"
+              alt="Dettaglio styling capelli"
+              loading="lazy"
+            />
+          </figure>
+          <figure class="gallery-item">
+            <img
+              src="https://images.unsplash.com/photo-1503951914875-452162b0f3f1?auto=format&fit=crop&w=1200&q=80"
+              alt="Ambiente barbershop premium"
+              loading="lazy"
+            />
+          </figure>
+        </div>
+      </section>
+
+      <!-- Form prenotazione con opzione WhatsApp -->
+      <section class="booking section-animate" id="prenotazione">
+        <div class="container booking-grid">
+          <div>
+            <div class="section-heading">
+              <p class="kicker">Prenotazione</p>
+              <h2>Riserva il tuo appuntamento</h2>
+            </div>
+            <p>
+              Compila il form in pochi secondi oppure scrivici direttamente su
+              WhatsApp.
+            </p>
+            <a
+              class="btn btn-outline"
+              href="https://wa.me/390000000000?text=Ciao%2C%20vorrei%20prenotare%20un%20appuntamento."
+              target="_blank"
+              rel="noopener noreferrer"
+              >Prenota su WhatsApp</a
+            >
+          </div>
+          <form id="bookingForm" class="booking-form" novalidate>
+            <label for="name">Nome</label>
+            <input id="name" name="name" type="text" placeholder="Mario Rossi" required />
+
+            <label for="date">Data</label>
+            <input id="date" name="date" type="date" required />
+
+            <label for="service">Servizio</label>
+            <select id="service" name="service" required>
+              <option value="">Seleziona un servizio</option>
+              <option value="Taglio capelli">Taglio capelli</option>
+              <option value="Barba">Barba</option>
+              <option value="Rasatura tradizionale">Rasatura tradizionale</option>
+              <option value="Pacchetto completo">Pacchetto completo</option>
+            </select>
+
+            <button type="submit" class="btn btn-primary">Invia richiesta</button>
+            <p id="formMessage" class="form-message" role="status" aria-live="polite"></p>
+          </form>
+        </div>
+      </section>
+
+      <!-- Recensioni clienti -->
+      <section class="reviews container section-animate" id="recensioni">
+        <div class="section-heading">
+          <p class="kicker">Recensioni</p>
+          <h2>Cosa dicono i clienti</h2>
+        </div>
+        <div class="review-grid">
+          <blockquote class="review-card">
+            <p class="stars" aria-label="5 stelle">★★★★★</p>
+            <p>"Professionalita' top e ambiente impeccabile. Taglio perfetto."</p>
+            <cite>- Luca</cite>
+          </blockquote>
+          <blockquote class="review-card">
+            <p class="stars" aria-label="5 stelle">★★★★★</p>
+            <p>"La barba migliore che abbia mai fatto. Cura maniacale del dettaglio."</p>
+            <cite>- Andrea</cite>
+          </blockquote>
+          <blockquote class="review-card">
+            <p class="stars" aria-label="5 stelle">★★★★★</p>
+            <p>"Servizio premium, puntualita' e grande attenzione allo stile."</p>
+            <cite>- Marco</cite>
+          </blockquote>
+        </div>
+      </section>
+
+      <!-- Contatti con mappa, orari e social -->
+      <section class="contacts section-animate" id="contatti">
+        <div class="container contacts-grid">
+          <div>
+            <div class="section-heading">
+              <p class="kicker">Contatti</p>
+              <h2>Vieni a trovarci</h2>
+            </div>
+            <ul class="contact-list">
+              <li><strong>Indirizzo:</strong> Via Roma 25, Milano</li>
+              <li><strong>Telefono:</strong> +39 02 1234 5678</li>
+              <li><strong>Orari:</strong> Lun-Sab 09:00 - 20:00</li>
+            </ul>
+            <div class="socials">
+              <a href="#" aria-label="Instagram">Instagram</a>
+              <a href="#" aria-label="Facebook">Facebook</a>
+              <a href="#" aria-label="TikTok">TikTok</a>
+            </div>
+          </div>
+          <iframe
+            title="Mappa Barber Studio"
+            src="https://www.google.com/maps?q=Duomo%20di%20Milano&output=embed"
+            loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade"
+          ></iframe>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <p>&copy; 2026 Barber Studio - Tutti i diritti riservati.</p>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>

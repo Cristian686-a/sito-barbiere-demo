@@ -1,0 +1,218 @@
+:root {
+  --bg: #0d0d0d;
+  --bg-soft: #151515;
+  --surface: #1e1e1e;
+  --text: #f3f3f3;
+  --muted: #b6b6b6;
+  --accent: #c49a36;
+  --accent-2: #7a1f1f;
+  --border: #2a2a2a;
+  --shadow: 0 15px 40px rgba(0, 0, 0, 0.35);
+}
+
+body.light-mode {
+  --bg: #f7f7f7;
+  --bg-soft: #ffffff;
+  --surface: #ffffff;
+  --text: #121212;
+  --muted: #4f4f4f;
+  --accent: #9a6a00;
+  --accent-2: #8f2a2a;
+  --border: #e5e5e5;
+  --shadow: 0 12px 28px rgba(0, 0, 0, 0.12);
+}
+
+* { box-sizing: border-box; }
+html { scroll-behavior: smooth; }
+
+body {
+  margin: 0;
+  font-family: "Inter", sans-serif;
+  background: var(--bg);
+  color: var(--text);
+  line-height: 1.6;
+  transition: background 0.35s ease, color 0.35s ease;
+}
+
+img { width: 100%; display: block; }
+a { color: inherit; text-decoration: none; }
+
+.container { width: min(1120px, 92%); margin-inline: auto; }
+
+.site-header {
+  position: sticky; top: 0; z-index: 1000;
+  backdrop-filter: blur(10px);
+  background: rgba(13, 13, 13, 0.85);
+  border-bottom: 1px solid var(--border);
+}
+
+.navbar {
+  min-height: 72px;
+  display: flex; align-items: center; justify-content: space-between; gap: 1rem;
+}
+
+.logo { font-weight: 800; letter-spacing: 1px; }
+.logo span { color: var(--accent); }
+
+.nav-links {
+  list-style: none; display: flex; align-items: center; gap: 1.2rem;
+  margin: 0; padding: 0;
+}
+.nav-links a { color: var(--muted); transition: color 0.25s ease; }
+.nav-links a:hover { color: var(--accent); }
+
+.menu-toggle, .theme-toggle {
+  border: 1px solid var(--border);
+  background: var(--surface);
+  color: var(--text);
+  cursor: pointer;
+}
+
+.theme-toggle { width: 40px; height: 40px; border-radius: 999px; }
+
+.menu-toggle {
+  display: none; width: 44px; height: 44px; border-radius: 10px; padding: 0.6rem;
+}
+.menu-toggle span {
+  display: block; height: 2px; width: 100%; background: var(--text); margin-bottom: 5px;
+}
+
+.hero {
+  min-height: 94vh;
+  position: relative;
+  display: grid;
+  place-items: center;
+  background:
+    linear-gradient(180deg, rgba(0,0,0,.55), rgba(0,0,0,.75)),
+    url("https://picsum.photos/seed/barberhero/1920/1080") center/cover no-repeat;
+}
+
+.hero-content { position: relative; text-align: center; max-width: 760px; }
+
+.hero-kicker, .kicker {
+  letter-spacing: 0.15em; text-transform: uppercase; font-size: 0.8rem; font-weight: 700;
+  color: var(--accent);
+}
+
+h1, h2, h3 { line-height: 1.2; }
+h1 { font-size: clamp(2.1rem, 5vw, 4.1rem); margin: 0.2rem 0 0.8rem; }
+h2 { margin: 0.25rem 0 1rem; font-size: clamp(1.6rem, 3.5vw, 2.4rem); }
+
+.btn {
+  display: inline-flex; align-items: center; justify-content: center;
+  border-radius: 999px; padding: 0.8rem 1.4rem; font-weight: 700;
+  transition: transform 0.25s ease, box-shadow 0.25s ease, background 0.25s ease;
+}
+.btn:hover { transform: translateY(-2px); }
+.btn-primary { background: linear-gradient(120deg, var(--accent), var(--accent-2)); color: #fff; box-shadow: var(--shadow); }
+.btn-outline { border: 1px solid var(--accent); color: var(--accent); }
+
+section { padding: 5.6rem 0; }
+
+.about-grid, .booking-grid, .contacts-grid {
+  display: grid; gap: 2rem; grid-template-columns: repeat(2, minmax(0, 1fr));
+}
+
+.values {
+  list-style: none; margin: 0; padding: 0; display: grid; gap: 1rem;
+}
+
+.values li, .review-card, .card, .booking-form {
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: 16px;
+  padding: 1.2rem;
+}
+
+.services { background: var(--bg-soft); }
+
+.service-grid, .review-grid {
+  display: grid; gap: 1rem; grid-template-columns: repeat(4, minmax(0, 1fr));
+}
+
+.card .icon { font-size: 1.5rem; margin-bottom: 0.4rem; }
+.card strong { color: var(--accent); }
+
+.gallery-grid {
+  display: grid; gap: 0.9rem; grid-template-columns: repeat(3, minmax(0, 1fr));
+}
+.gallery-item {
+  overflow: hidden; border-radius: 14px; border: 1px solid var(--border);
+}
+.gallery-item img {
+  aspect-ratio: 4/3; object-fit: cover;
+  transition: transform 0.4s ease, filter 0.4s ease;
+}
+.gallery-item:hover img { transform: scale(1.08); filter: contrast(1.1); }
+
+.booking { background: var(--bg-soft); }
+
+.booking-form { display: grid; gap: 0.55rem; }
+
+input, select {
+  background: transparent;
+  border: 1px solid var(--border);
+  border-radius: 10px;
+  color: var(--text);
+  padding: 0.75rem;
+  font: inherit;
+}
+.form-message { min-height: 24px; margin: 0; color: var(--accent); }
+
+.stars { color: #ffcf5a; }
+
+.contact-list {
+  list-style: none; padding: 0; margin: 0 0 1rem; display: grid; gap: 0.5rem;
+}
+.socials { display: flex; flex-wrap: wrap; gap: 0.8rem; }
+.socials a { color: var(--accent); }
+
+.contacts iframe {
+  width: 100%; min-height: 330px; border: 1px solid var(--border); border-radius: 14px;
+}
+
+.site-footer {
+  border-top: 1px solid var(--border);
+  text-align: center;
+  color: var(--muted);
+  padding: 1.2rem;
+}
+
+/* FIX IMPORTANTE:
+   Se JS non parte, le sezioni restano visibili (default). */
+.section-animate {
+  opacity: 1;
+  transform: none;
+}
+
+/* Animazione attivata solo quando JS aggiunge .js-enabled al body */
+.js-enabled .section-animate {
+  opacity: 0;
+  transform: translateY(24px);
+  transition: opacity 0.6s ease, transform 0.6s ease;
+}
+.js-enabled .section-animate.is-visible {
+  opacity: 1;
+  transform: none;
+}
+
+@media (max-width: 992px) {
+  .service-grid, .review-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+  .about-grid, .booking-grid, .contacts-grid { grid-template-columns: 1fr; }
+}
+
+@media (max-width: 760px) {
+  .menu-toggle { display: inline-block; }
+
+  .nav-links {
+    position: absolute; top: 72px; left: 0; right: 0;
+    background: var(--bg-soft);
+    border-bottom: 1px solid var(--border);
+    flex-direction: column; align-items: flex-start;
+    padding: 1rem 4%;
+    display: none;
+  }
+  .nav-links.active { display: flex; }
+
+  .gallery-grid, .service-grid, .review-grid { grid-template-columns: 1fr; }
+}
